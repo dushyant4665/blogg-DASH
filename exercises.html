@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>gggg</title>
+  <style>
+*{
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    margin: 0px;
+    outline: none;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    text-decoration: none;
+    transition: all 0.2s linear 0s;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+}
+
+header a {
+  text-decoration: none;
+  margin: 20px;
+}
+
+header {
+  padding: 0 20px;
+  background-color: #1d1f1d;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #1a3708;
+  font-size: 32px;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: white;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  color: #641e1e;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity:0 ;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color:  #000000
+ 
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  height: calc(30vh - 32px);   
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-top: 10px;
+
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+}
+
+
+
+    body{
+      background-color: rgb(0, 0, 0);
+      color: aliceblue;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* display: block; */
+    margin: 8px;}
+
+
+    footer{
+     
+    }
+    #img1{
+      float: right;
+      margin: 0px 40px 0px 28px;
+      position: relative;
+   
+}
+
+    #img2{
+      float: right;
+      margin: 0px 40px 0px 28px;
+      position: relative;
+      width ;
+
+    }
+
+    #img3{
+      float: right;
+      margin: 0px 40px 0px 28px;
+      position: relative;
+
+    }
+
+    #img4{
+      float: right;
+      margin: 0px 40px 0px 28px;
+      position: relative;
+    }
+
+    #img5{
+      float: right;
+      margin: 0px 40px 0px 28px;
+      position: relative;
+    }
+    
+    h2 {
+    display: block;
+    font-size: 2em;
+    margin:0px 40px 30px 0px;
+    font-weight: bold;
+}
+
+    #importance-of-exercises-sec,
+    #reduce-anxiety-sec,
+    #mental-health-sec,
+    #skinny-body-fat-sec,
+    #confidence-sec,
+    #free-sec{
+      width: 900px;
+      height: 500px;
+      word-spacing: 1px;
+      margin: 20px 200px 60px 200px;
+      letter-spacing: none;
+      
+    }
+
+    p {
+    color: #fff;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+footer{
+  background: #111;
+  height: auto;
+  width:99vw ;
+  font-family:"open-sans";
+  padding-top: 12px;
+  color: #fff;
+
+}
+
+.footer_content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  text-align: center;
+}
+
+
+.footer_content h3{
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 2rem;
+  color: #1a3708;
+
+}
+
+.footer_content .mail_link{
+  max-width: 500px;
+  margin: 100px 60px 20px 60px;
+  line-height:28px;
+  font-size: 16px ;
+}
+
+
+.socials{
+list-style: none;
+display: flex;
+align-items:center;
+justify-content: center;
+margin: 5px;
+padding: 20px;
+
+}
+
+
+.social li{
+  margin: 0 10px;
+
+}
+
+.social a{
+  text-decoration: none;
+  color: white;
+}
+
+.social a i{
+  font-size:1.1rem;
+  transition: color .4s ease;
+  padding: 20px;
+}
+
+i:hover {
+  color:rgb(206, 220, 82);
+}
+
+.mail_link:hover{
+  color: rgb(105, 114, 21);
+  transition: color .4s ease;
+}
+
+.website__rights{
+  background: black;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+
+}
+
+.website__rights p{
+  font-size:10px ;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.website__rights {
+
+}
+
+
+
+  </style>
+  <link rel="stylesheet" href="">
+</head>
+<body>
+
+
+
+<header>
+  <img src="" alt="">
+    <div id="brand"><a href="/">CRISP</a></div>
+    <nav>
+      <ul>
+        <li><a href="/home">About</a></li>
+        <li><a href="/products">More</a></li>
+        <li><a href="/about">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </div>
+     </header>   
+
+   <div>
+    <section id="importance-of-exercises-sec">
+      <main>
+      <h1>Importance of doing exercises</h1>
+      
+      <p>Doing exercises helps in straight posture
+        doing any kind of physical activity helps in blood circulation.
+      </p>
+    </main>
+    
+    </section> 
+    <section id="reduce-anxiety-sec">
+      <h1>Physcial Exercises Benefits</h1>
+    
+      <h2>1.Reduce anxiety and depression </h2>
+      <img id="img1" src="" width="250px" alt="">
+      <p>
+       Studies show that exercise can treat mild to moderate depression as effectively as antidepressant medication—but without the side-effects, of course. As one example, a recent study done by the Harvard T.H. Chan School of Public Health found that running for 15 minutes a day or walking for an hour reduces the risk of major depression by 26%. In addition to relieving depression symptoms, research also shows that maintaining an exercise schedule can prevent you from relapsing.
+
+      </p>
+     </section>
+      <section id="mental-health-sec">
+        <h2>2.Better physcial Health may mean better mental health </h2>
+        <img id="img2" src="assets/images/flex1.png" width="250px" alt="">
+        <p>
+          While stress can cause illness, illness can also cause stress. Improving your overall health and longevity with exercise can save you a great deal of stress in the short run (by strengthening your immunity to colds, the flu, and other minor illnesses) and the long run (by helping you stay healthier longer, and enjoy life more because of it).
+        </p>
+      </section>
+      <section id="confidence-sec">
+        
+          <h2 style="margin-left: px;">3.Exercises promotes confidence</h2>
+          <img id="img3" src="assets/images/chad.jpg" width="250px" alt="chad">
+          <p>
+            Doing consistently workout indoor or outdoor boost confidence and self-esteem.
+             Exercise can help you lose weight, straighten your body, and maintain a healthy glow and a smile. You may feel a subtle but significant boost in your mood as your clothes look more flattering and you project an aura of increased strength. <br>
+             
+             </p>
+  
+            <p>Exercising makes us feel more in control of our bodies and the capabilities of our bodies. In turn, this makes us feel better in control over our circumstances.</p> 
+            
+             <p>Exercise distracts us from negative thought patterns like worrying and overthinking, which cuts down our stress. 
+              With regular exercise, we witness the growth of our strength and stamina. This boosts our goal-achievement confidence, which spills over to other areas of our life.</p>
+
+              <p>Exercise distracts us from negative thought patterns like worrying and overthinking, which cuts down our stress.
+                With regular exercise, we witness the growth of our strength and stamina. This boosts our goal-achievement confidence, which spills over to other areas of our life.</p>
+          
+      
+      </section>
+     <section  id="free-sec">
+
+        <h2 >4.Makes body free and flexible</h2>
+        <img id="img4" width="250px" src="assets/images/flex.jpg" alt="flex">
+        <p>
+          Stretching your body to become more supple and flexible offers many physical benefits. Such training allows for easier and deeper movements while building strength and stability. Stretching your muscles and joints also leads to greater range of motion, improved balance, and increased flexibility and strength.
+        </p>
+        <p>
+          Stretching your body to become more supple and flexible offers many physical benefits. Such training allows for easier and deeper movements while building strength and stability. Stretching your muscles and joints also leads to greater range of motion, improved balance, and increased flexibility and strength.
+        </p>
+        <p>
+          Stretching your body to become more supple and flexible offers many physical benefits. Such training allows for easier and deeper movements while building strength and stability. Stretching your muscles and joints also leads to greater range of motion, improved balance, and increased flexibility and strength.
+        </p>
+     </section>
+      <section id="skinny-body-fat-sec">
+        <h2>5.Reduce Skinny Body Fat</h2>
+          <img id="img5" src="" alt="">
+          <p>
+            Exerciese help to reduce skinny fat from body. 
+            We need to take care of our neat clear diet we consume in our daily life.
+          </p>
+      </section>
+  
+<footer class="footer__sec">
+      
+  <div class="footer_content" >
+      
+      <h3>CRISP</h3>
+      <a class="mail_link" href="https://mail.google.com/mail/u/0/?fs=1&to=dushyantkhandelwal4665@gmail.com&tf=cm">@dushyantkhandelwal4665@gmail.com</a>
+      <Ul class="socials">
+       <li><a href="/"><i class="fa fa-facebook"></i></a></li>
+       <li><a href="https://twitter.com/dushyant4665"><i class="fa fa-twitter"></i></a></li>
+       <li><a href="https://www.instagram.com/dushyant.fr/"><i class="fa fa-instagram"></i></a></li>
+       <li><a href="/"><i class="fa fa-youtube"></i></a></li>
+       <li><a href="https://www.linkedin.com/in/dushyant-khandelwal-516319221/"><i class="fa fa-linkedin"></i></a></li>
+       <li><a href="https://github.com/dushyant4665/"><i class="fa fa-github"></i></a></li>
+      </Ul>
+  </div>
+
+<div> <p  class="website__rights">© CRISP 2024. All rights reserved</p></div>
+
+
+
+
+
+
+</footer>
+
+
+
+    <p>&copy; </p>
+   </footer>
+
+
+
+</body>
+</html>

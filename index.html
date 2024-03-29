@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href=".css">
+  <style>
+  *{
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    margin: 0px;
+    outline: none;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    text-decoration: none;
+    transition: all 0.2s linear 0s;}
+
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+}
+
+header a {
+  text-decoration: none;
+  margin: 20px;
+}
+
+header {
+  padding: 0 20px;
+  background-color: #1d1f1d;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #1a3708;
+  font-size: 32px;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: white;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  color: #641e1e;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity:0 ;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color:  #000000
+ 
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  height: calc(30vh - 32px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-top: 10px;
+
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+}
+
+
+
+
+
+.container{
+    background:linear-gradient( rgb(255, 255, 255));
+    padding:25px ;
+    padding-bottom: 100px;
+   
+}
+
+.container .heading{
+    text-align: center;
+    padding-bottom: 40px;
+    color:#818181;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding:16px 20px;
+}
+
+.container .box-container .box img{
+    width: 250px;
+}
+
+.container .box-container .box h3{
+    color:#444;
+    font-size: 30px;
+    padding:18px 0;
+}
+
+.container .box-container .box p{
+    color:#1c1c1c;
+    font-size: 15px;
+    line-height: 2rem;
+}
+
+.container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+@media (max-width:768px){
+    .container{
+        padding:20px;
+    }
+}
+
+.p{
+    color: #fff;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+footer{
+  background: #111;
+  height: auto;
+  width:99vw ;
+  font-family:"open-sans";
+  padding-top: 12px;
+  color: #fff;
+
+}
+
+.footer_content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  text-align: center;
+}
+
+
+.footer_content h3{
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 1rem;
+  color: #1a3708;
+
+}
+
+.footer_content .mail_link{
+  max-width: 500px;
+  margin: 100px 60px 20px 60px;
+  line-height:28px;
+  font-size: 16px ;
+}
+
+
+.socials{
+list-style: none;
+display: flex;
+align-items:center;
+justify-content: center;
+margin: 5px 0 10px 0;
+
+}
+
+
+.social li{
+  margin: 0 10px;
+
+}
+
+.social a{
+  text-decoration: none;
+  color: white;
+}
+
+.social a i{
+  font-size:1.1rem;
+  transition: color .4s ease;
+}
+
+i:hover {
+  color:rgb(206, 220, 82);
+}
+
+.mail_link:hover{
+  color: rgb(105, 114, 21);
+  transition: color .4s ease;
+}
+
+.website__rights{
+  background: black;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+
+}
+
+.website__rights p{
+  font-size:10px ;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.text-sm {
+color: #bfbfbf;
+padding:10px 2px auto 8px;
+margin: 22px 2px 0px 160px;
+position: relative;
+bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </style>
+
+  
+</head>
+<body>
+  <header>
+    <div id="brand"><a href="/">CRISP</a></div>
+    <nav>
+      <ul>
+        <li><a href="/home">About</a></li>
+        <li><a href="/products">More</a></li>
+        <li><a href="/about">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </div>
+     </header>   
+<section>
+
+
+
+
+
+
+</section>
+        
+<div class="container">
+<h1 class="heading">CONTENT</h1>
+<div class="box-container">
+
+      <div class="box">
+          <img src="assets/images/flex.jpg" alt="">
+          <h3>Importance of doing exercises</h3>
+          <p class="paragraph-box">Doing exercises helps in straight posture
+            doing any kind of physical activity helps in blood circulation....</p>
+          <a href="#" class="btn">read more</a>
+
+          <br>
+
+          <div class="text-sm">
+            <time datetime="2021-11-28">Nov 28, 2021</time>
+            <span class="separator"></span>
+            <ion-icon name="time-outline"></ion-icon>
+            <!-- <time datetime="PT4M">4 min</time> -->
+          </div>
+      </div>
+
+      <div class="box">
+          <img src="assets/images/universe.jpeg" alt="">
+          <h3>The unsolved Mysteries of Universe</h3>
+          <p class="paragraph-box">There are few scientists of whom it can be said that their mistakes are more interesting... </p>
+          <a href="http://127.0.0.1:5500/blog/exercises.html" class="btn">read more</a>
+
+          <div class="text-sm">
+            <time datetime="2021-11-28">Nov 28, 2021</time>
+            <span class="separator"></span>
+            <ion-icon name="time-outline"></ion-icon>
+            <!-- <time datetime="PT4M">4 min</time> -->
+            </div>
+      </div>
+
+      <div class="box">
+
+          <img src="assets/images/flex1.png" alt="">
+          <h3>Why we should do meditation ? Marcus arelius
+          </h3>
+
+          <p class="paragraph-box">There are times when the temple of the soul is empty. We may Acknowledge, with our intelligence, the supreme noble....</p>
+          <a href="" class="btn">read more</a>
+
+          <div class="text-sm">
+            <time datetime="2021-11-28">Nov 28, 2021</time>
+            <span class="separator"></span>
+            <ion-icon name="time-outline"></ion-icon>
+            <!-- <time datetime="PT4M">4 min</time> -->
+      </div>
+    </div>
+
+
+      <div class="box">
+          <img src="assets/images/" alt="">
+          <h3>Encylopedia for everything </h3>
+          <p class="paragraph-box"> <span style="font-weight: bold;"> Encyclopaedia</span>, reference work that contains information on all branches of knowledge or that treats a particular branch of knowledge in a comprehensive manner.</p>
+          <a href="#" class="btn">read more</a>
+
+          <div class="text-sm">
+            <time datetime="2021-11-28">Nov 28, 2021</time>
+            <span class="separator"></span>
+            <ion-icon name="time-outline"></ion-icon>
+            <!-- <time datetime="PT4M">4 min</time> -->
+      </div>
+    </div>
+
+
+      <div class="box">
+          <img src="images/universe.jpeg" alt="">
+          <h3>hello</h3>
+          <p class="paragraph-box">the world know who i'm why do i have to say it </p>
+
+          <a href="#" class="btn">read more</a>
+          <div class="text-sm">
+            <time datetime="2021-11-28">Nov 28, 2021</time>
+            <span class="separator"></span>
+            <ion-icon name="time-outline"></ion-icon>
+            <!-- <time datetime="PT4M">4 min</time> -->
+          </div>
+      </div>
+  
+
+      <div class="box">
+          <img src="images/" alt="">
+
+          <h3>i'm better</h3>
+          <p class="paragraph-box">you are not weak you need to train your mind </p>
+          <a href="#" class="btn">read more</a>
+          <div class="text-sm">
+            <time datetime="2021-11-28">Nov 28, 2021</time>
+            <span class="separator"></span>
+            <ion-icon name="time-outline"></ion-icon>
+            <!-- <time datetime="PT4M">4 min</time> -->
+        </div>
+     </div>
+       
+  
+   
+
+      </div>
+    </div>
+
+  <section id="blog-posts">
+
+  </section>
+
+
+
+
+
+
+
+<footer class="footer__sec">
+      
+       <div class="footer_content" >
+           
+           <h3>CRISP</h3>
+           <a class="mail_link" href="https://mail.google.com/mail/u/0/?fs=1&to=dushyantkhandelwal4665@gmail.com&tf=cm">@dushyantkhandelwal4665@gmail.com</a>
+           <Ul class="socials">
+            <li><a href="/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/dushyant4665"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/dushyant.fr/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="/"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/dushyant-khandelwal-516319221/"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/dushyant4665/"><i class="fa fa-github"></i></a></li>
+           </Ul>
+       </div>
+
+<div> <p  class="website__rights">© CRISP 2024. All rights reserved</p></div>
+
+
+
+
+    
+</footer>
+
+  <script>
+     function toggleMobileMenu(menu) {
+      menu.classList.toggle('open');
+  }
+  </script>
+</body>
+</html>
